@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="display">
+    <textarea name="result" id="result"></textarea>
+ <div class="btn">
+        <button id="style-btn" onclick="result.value ='' ">AC</button>
+        <button id="style-btn" onclick="result.value = result.value.toString().slice(0,-1)">DEL</button>
+        <button id="style-btn" onclick="result.value += '*' ">×</button>
+        <button id="style-btn" onclick="result.value += '/' ">÷</button>
+    <div>
+   <button onclick="result.value += '9' ">9</button>
+   <button onclick="result.value += '8' ">8</button>
+   <button onclick="result.value += '7' ">7</button>
+   <button id="style-btn" onclick="result.value += '-' ">-</button>
+        </div>
+   <button onclick="result.value += '4' ">4</button>
+   <button onclick="result.value += '5' ">5</button>
+   <button onclick="result.value += '6' ">6</button>
+   <button id="style-btn" onclick="result.value += '+' ">+</button>     
+        <div>
+    <button onclick="result.value += '3' ">3</button>
+    <button onclick="result.value += '2' ">2</button>
+    <button onclick="result.value += '1' ">1</button>
+    <button id="style-btn" onclick="result.value += '.' ">.</button>        
+        </div>
+        <div >
+    <button onclick="result.value += '0' ">0</button>
+    <button onclick="result.value = eval(result.value)" id="equal">=</button>        
+        </div>
+    </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
